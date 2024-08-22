@@ -1,0 +1,270 @@
+#contact {
+  .title {
+    font-size: var(--2xl);
+    color: var(--light);
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    .contactLeft {
+      display: flex;
+      flex-basis: 30%;
+      flex-grow: 1;
+      gap: 1.5rem;
+    }
+    .contactRight {
+      //   flex-basis: 60%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      font-size: var(--base);
+      gap: 1rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        > input {
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          background: var(--dark1);
+          border: none;
+          color: var(--light);
+        }
+        > textarea {
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          background: var(--dark1);
+          border: none;
+          color: var(--light);
+        }
+        .submit {
+          text-align: center;
+          > button {
+            padding: 0.5rem 2rem;
+            background: var(--indigo);
+            border: none;
+            border-radius: 2em;
+            font-size: var(--sm);
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    gap: 1em;
+    .personalInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      font-size: var(--sm);
+      p i {
+        color: var(--indigo);
+        font-size: var(--sm);
+        margin-right: 0.5rem;
+      }
+    }
+    .cvButton {
+      a {
+        font-size: var(--sm);
+      }
+    }
+  }
+}
+
+/* xs */
+@media (min-width: 475px) {
+  #contact {
+    .title {
+      font-size: var(--3xl);
+      color: var(--light);
+    }
+    .contactContainer {
+      gap: 1em;
+      .contactRight {
+        font-size: var(--base);
+        gap: 1rem;
+        form {
+          gap: 1rem;
+          .submit {
+            > button {
+              font-size: var(--base);
+            }
+          }
+        }
+      }
+    }
+    .infoContainer {
+      gap: 1.5em;
+      .personalInfo {
+        gap: 1em;
+        font-size: var(--base);
+        p i {
+          font-size: var(--base);
+        }
+      }
+      .cvButton {
+        a {
+          font-size: var(--base);
+        }
+      }
+    }
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  #contact {
+    .title {
+      font-size: var(--3xl);
+      color: var(--light);
+    }
+    .contactContainer {
+      flex-direction: row;
+      gap: 1em;
+      .contactRight {
+        flex-basis: 60%;
+        flex-grow: 1;
+        font-size: var(--base);
+        gap: 1em;
+
+        form {
+          gap: 1.5em;
+          .submit {
+            text-align: center;
+            > button {
+              font-size: var(--base);
+            }
+          }
+        }
+      }
+    }
+    .infoContainer {
+      gap: 1em;
+      .personalInfo {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        font-size: var(--base);
+        p i {
+          font-size: var(--base);
+        }
+      }
+    }
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  #contact {
+    .title {
+      font-size: var(--4xl);
+      color: var(--light);
+    }
+    .contactContainer {
+      flex-direction: row;
+      gap: 1em;
+      .contactRight {
+        flex-basis: 60%;
+        flex-grow: 1;
+        font-size: var(--lg);
+        gap: 1em;
+
+        form {
+          gap: 1.5em;
+          .submit {
+            text-align: center;
+            > button {
+              font-size: var(--lg);
+            }
+          }
+        }
+      }
+    }
+    .infoContainer {
+      gap: 2em;
+      .personalInfo {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        font-size: var(--lg);
+        p i {
+          font-size: var(--lg);
+        }
+      }
+      .cvButton {
+        a {
+          font-size: var(--lg);
+        }
+      }
+    }
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  #contact {
+    .title {
+      font-size: var(--5xl);
+      color: var(--light);
+    }
+    .contactContainer {
+      flex-direction: row;
+      gap: 1em;
+      .contactRight {
+        flex-basis: 60%;
+        flex-grow: 1;
+        font-size: var(--xl);
+        gap: 1em;
+
+        form {
+          gap: 1.5em;
+          .submit {
+            text-align: center;
+            > button {
+              font-size: var(--xl);
+            }
+          }
+        }
+      }
+    }
+    .infoContainer {
+      gap: 2.5em;
+      .personalInfo {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5em;
+        font-size: var(--xl);
+        p i {
+          font-size: var(--xl);
+        }
+      }
+      .cvButton {
+        a {
+          font-size: var(--xl);
+        }
+      }
+    }
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
